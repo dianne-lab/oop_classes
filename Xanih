@@ -1,0 +1,37 @@
+public class AnimalInfo {
+    // Attributes
+    private String name;
+    private String species;
+    private int age;
+    private String habitat;
+
+    // Constructor
+    public AnimalInfo(String name, String species, int age, String habitat) {
+        this.name = name;
+        this.species = species;
+        this.age = age;
+        this.habitat = habitat;
+    }
+
+    // Method to display info
+    public void displayInfo() {
+        System.out.println("Animal Name: " + name);
+        System.out.println("Species: " + species);
+        System.out.println("Age: " + age + " years old");
+        System.out.println("Habitat: " + habitat);
+        System.out.println("----------------------------");
+    }
+
+    public static void main(String[] args) {
+        // Create animal objects
+        AnimalInfo lion = new AnimalInfo("Leo", "Lion", 5, "Savannah");
+        AnimalInfo penguin = new AnimalInfo("Pingu", "Penguin", 3, "Antarctica");
+        AnimalInfo elephant = new AnimalInfo("Ella", "Elephant", 10, "Grasslands");
+
+        // Display their information
+        lion.displayInfo();
+        penguin.displayInfo();
+        elephant.displayInfo();
+    }
+}
+
